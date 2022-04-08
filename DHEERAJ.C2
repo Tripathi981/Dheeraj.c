@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[10],n,sum=0,i,count=0; count++;
+clrscr(); count++;
+printf("\n\t NAME-: DHEERAJ TIWARI ");
+printf("\n\t ROLL NO.-:1/21/FET/BCS/079\n");
+printf("\n\t Enter the number of elements\n\t");
+count++;
+scanf("%d",&n);
+count++;
+printf("\n\t Enter the elements\n\t");
+count++;
+for(i=0;i<n;i++)
+{
+count++;
+scanf("%d",&a[i]);count++;
+sum=sum+a[i]; count++;
+}
+count++;
+printf("\n\t The sum = %d\t",sum);
+count++;
+printf("\n\t The number of instruction used %d",count);
+getch();
+}

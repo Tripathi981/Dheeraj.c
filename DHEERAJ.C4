@@ -1,0 +1,12 @@
+#include<iostream.h>
+#include<conio.h>
+{
+float amount(float principal,int time,int rate=0.15);
+}
+int main()
+{
+cin<<"Enter number"
+cout<<"amount(200,2)"<<amount;
+return 0;
+}
+
