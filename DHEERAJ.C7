@@ -1,33 +1,18 @@
-   #include <iostream.h>
-   #include <conio.h>
-   void area(int l,int b)
-   {
-   int area=l*b;
-   cout<<"area is="<<area;
-   }
-   void area(int b,float h)
-   {
-   int area=0.5*b*h;
-   cout<<"\n area is -"<<area;
-   }
-   void area(int s)
-   {
-   int area=s*s;
-   cout<<"\n area is-"<<area;
-   }
-   void main()
-   {
-   int l,b,s;
-   float h;
-   clrscr();
-   cout<<"enter l and b-\n";
-   cin>>l>>b;
-   area(l,b);
-   cout<<"enter b and h-\n";
-   cin>>b>>h;
-   area(b,h);
-   cout<<"enter s-\n";
-   cin>>s;
-   area(s);
-   getch();
-   }
+
+#include<stdio.h>
+long int multiplyNumbers(int n);
+int main()
+{
+int n;
+printf("Enter a positive integer:");
+scanf("%d",&n);
+printf("factorial of %d=%1d",n,multiplyNumbers(n));
+return 0;
+}
+long int multiplyNumbers(int n)
+{
+if (n>=1)
+return n*multiplyNumbers(n-1);
+else
+return 1;
+}
